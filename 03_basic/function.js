@@ -25,5 +25,42 @@ function logginMessage(username)
    }
    return `${username} just logged in`;
 }
-
+console.log("Example of passing string to a function and use of return")
 console.log(logginMessage("Sourabh"))
+
+//Rest operator to pass multiple unknown values to a function like in a shopping cart 
+//when the number of items addded to the cart is unkown
+// rest operator
+
+function calculateCartPrice(...num1)
+{
+    return num1;       // return all the passed value
+}
+console.log("Its the Example of Rest Operator")
+console.log(calculateCartPrice(100,200,400,600))    
+
+//passing objects to a function
+
+const Item={
+    name: "Apple",
+    price: 200
+}
+
+function handleObjects(object)
+{
+  console.log(`Item name is ${object.name} and its price is ${object.price}`)
+}
+console.log("Its the example of passing a object to a function")
+handleObjects(Item)
+
+
+//passing Array to the function
+
+const arr=[1,2,3,4,5]
+
+function returnSecondElement(anyarray)
+{
+    return anyarray[1];
+}
+
+console.log(returnSecondElement(arr))
