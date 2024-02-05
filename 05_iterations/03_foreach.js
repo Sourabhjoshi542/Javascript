@@ -1,5 +1,6 @@
 //foreach loop - mostly used loop in arrays
 //callback function - function that do not have the name used inside foreach loop
+//NOTE- foreach loop does not return any value
 
 const arr=["car","bike","ships"]
 
