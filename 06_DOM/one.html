@@ -6,15 +6,54 @@
     <style>
         .bg-black
         {
-           background-color:black;
-           color:aliceblue
+           background-color:rgb(76, 66, 66);
+           color:rgb(255, 251, 243) ;
         }
     </style>
 </head>
-<body>
-    <div class ="bg-black">
-        <h1 id="title" class=""heading>Dom learning</h1> 
-        <p> this is the paragraph to be manipulated </p>
+<body class ="bg-black">
+    <div>
+        <h1 id="title" class="heading">Dom learning <span style="display: none;"> with Sourabh </h1> 
+        <p> this is the paragraph to be manipulated  </p>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
 </body>
 </html>
+
+
+<! selectors in javascript
+   1- document.getElementById('title')
+   2-document.getElementByClassName('heading')
+   3-document.querySelector('#id')
+>
+
+
+<!
+   .innerHTML = show all the text with html 
+   .innerText = show only visible text and not the text which is hidden by the css and display property
+   .textContent= show all the text written even if it is hidden by css or display property
+
+>
+
+
+<! if we have to change the list item 
+
+    document.querySelector('ul').querySelector('li').innerHTML="five"
+    document.querySelector('ul').querySelector('li').style.color="red"
+    
+    we can also store it in variable like
+
+    const item=document.getElementById('id')
+    item.innerHTML
+    item.style.color="red"
+    
+    const Item=document.querySelector('ul')
+    const li=document.querySelector('li')
+    li.innerHTML="five"
+    li.style.background-color="red
+     
+    >
