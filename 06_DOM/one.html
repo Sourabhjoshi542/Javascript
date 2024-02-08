@@ -57,3 +57,22 @@
     li.style.background-color="red
      
     >
+
+    <! querySelectorAll
+       
+    const lli=document.querySelectorAll('li')            select all the list items
+
+    lli.forEach( function (item) {
+        item.style.color="red";
+    } )
+
+    >
+
+    <!
+
+    node list  - querySelectorAll    forEach can execute
+    HTML collection   - document.getElementByClassName   forEach cannot be applied
+    
+    convert these into array
+
+    const myArr=Array.from(htmlcollection)
